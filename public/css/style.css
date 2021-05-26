@@ -1,0 +1,38 @@
+*{
+    font-family:'Roboto';
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    overflow:hidden;
+}
+
+h1 {
+    font-size: 36px !important;
+}
+
+header {
+    background-color: white;
+}
+
+.btn-action{
+    font-size:18px !important;
+}
+
+.upload-alert{
+    font-size: 1.2em !important;
+}
+
+.responsive-card {
+    display:none !important;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+}
+
+#last_video_up a{
+    width:max-content;
+}

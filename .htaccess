@@ -1,0 +1,18 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]*)$ /videos1.php?action=up&id=$1 [L]
+
+# Bloquer une ou plusieurs adresse IP
+Order Allow,Deny
+Allow from all
+Deny from 191.116.53.120
+Deny from 191.116.11.1
+
+RewriteEngine on
+ErrorDocument 404   https://streamwo.com/ready.php
+
